@@ -1,0 +1,118 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Background for register and login sections */
+#register-section,
+#login-section {
+    background-image: url('https://storage.googleapis.com/a1aa/image/ghJyzEtGcOqWBtleuHHWate7UtDdoN8XViufS0YeMYinF1OOB.jpg');
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    padding: 10px; /* Add padding for the content */
+    border-radius: 0px; /* Rounded corners */
+    margin-bottom: 110; /* Removed margin for full image visibility */
+    color: white; /* Change text color for better visibility */
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #434190;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* Option Button Styles */
+.option-button {
+    width: 100%;
+    margin: 15px 0; /* Increased margin for more space */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white; /* Text color */
+}
+
+/* Option Button Colors */
+.option-button:nth-child(1) {
+    background-color: #4caf50; /* Green */
+}
+
+.option-button:nth-child(2) {
+    background-color: #2196f3; /* Blue */
+}
+
+.option-button:nth-child(3) {
+    background-color: #ff9800; /* Orange */
+}
+
+.option-button:nth-child(4) {
+    background-color: #f44336; /* Red */
+}
+
+/* Hover Effects */
+.option-button:hover:nth-child(1) {
+    background-color: #45a049; /* Darker green */
+}
+
+.option-button:hover:nth-child(2) {
+    background-color: #1976d2; /* Darker blue */
+}
+
+.option-button:hover:nth-child(3) {
+    background-color: #f57c20; /* Darker orange */
+}
+
+.option-button:hover:nth-child(4) {
+    background-color: #d32f2f; /* Darker red */
+}
