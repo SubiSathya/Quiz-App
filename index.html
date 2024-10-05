@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="register-section" class="section active">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="Enter Username">
+            <input type="password" id="register-password" placeholder="Enter Password">
+            <button onclick="registerUser()">Register</button>
+        </div>
+
+        <div id="login-section" class="section">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Enter Username">
+            <input type="password" id="login-password" placeholder="Enter Password">
+            <button onclick="loginUser()">Login</button>
+        </div>
+
+        <div id="quiz-section" class="section">
+            <h2>Quiz</h2>
+            <div id="question-container"></div>
+            <button id="next-question" onclick="nextQuestion()">Next Question</button>
+            <div id="score-display"></div>
+        </div>
+
+        <div id="ranking-section" class="section">
+            <h2>Ranking</h2>
+            <div id="ranking-list"></div>
+        </div>
+    </div>
+
+    <!-- Linking the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
